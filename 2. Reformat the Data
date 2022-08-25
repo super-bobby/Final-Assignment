@@ -1,0 +1,11 @@
+--Reformat the final_assignments_qa to look like the final_assignments table,
+--filling in any missing values with a placeholder of the appropriate data type.
+
+
+SELECT
+  item_id,
+  test_a       AS test_assignment,
+  'test_a'     AS test_number,
+  '2020-01-01' AS test_start_date
+FROM
+  dsv1069.final_assignments_qa
